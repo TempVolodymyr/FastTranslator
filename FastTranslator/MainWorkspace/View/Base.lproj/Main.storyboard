@@ -30,10 +30,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ag5-sC-Ixx" secondAttribute="bottom" id="ryy-Jm-Vy9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainScreenTableView" destination="Ag5-sC-Ixx" id="jh7-IY-Qzx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="59"/>
+            <point key="canvasLocation" x="-184.05797101449278" y="58.928571428571423"/>
         </scene>
     </scenes>
     <resources>

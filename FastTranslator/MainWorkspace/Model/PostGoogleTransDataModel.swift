@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct PostGoogleTransDataModel : Encodable {
+    var targetLanguage: String?
+    var sourceLanguage: String?
+    var text: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case targetLanguage = "tl"
+        case sourceLanguage = "sl"
+        case text
+    }
+}

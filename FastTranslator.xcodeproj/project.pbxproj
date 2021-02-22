@@ -13,17 +13,27 @@
 		7F3F32A025B5954D00FF7BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F329E25B5954D00FF7BF1 /* Main.storyboard */; };
 		7F3F32A225B5954E00FF7BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F32A125B5954E00FF7BF1 /* Assets.xcassets */; };
 		7F3F32A525B5954E00FF7BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F32A325B5954E00FF7BF1 /* LaunchScreen.storyboard */; };
+		7F7B41E125D54E6E0000D268 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B41E025D54E6E0000D268 /* GradientLayer.swift */; };
+		7F7B41E925DBFF7A0000D268 /* MainTranslatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B41E725DBFF7A0000D268 /* MainTranslatorTableViewCell.swift */; };
+		7F7B41EA25DBFF7A0000D268 /* MainTranslatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7B41E825DBFF7A0000D268 /* MainTranslatorTableViewCell.xib */; };
+		7F90AB4725D14C2700882653 /* RecievedGoogleTranslationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90AB4625D14C2700882653 /* RecievedGoogleTranslationDataModel.swift */; };
+		7F90AB4A25D14CB800882653 /* PostGoogleTransDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90AB4925D14CB800882653 /* PostGoogleTransDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F3F329525B5954D00FF7BF1 /* FastTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3F329825B5954D00FF7BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F3F329A25B5954D00FF7BF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F3F329A25B5954D00FF7BF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = FastTranslator/Helpers/SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
 		7F3F329C25B5954D00FF7BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F3F329F25B5954D00FF7BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F3F32A125B5954E00FF7BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3F32A425B5954E00FF7BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F3F32A625B5954E00FF7BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7B41E025D54E6E0000D268 /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		7F7B41E725DBFF7A0000D268 /* MainTranslatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTranslatorTableViewCell.swift; sourceTree = "<group>"; };
+		7F7B41E825DBFF7A0000D268 /* MainTranslatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTranslatorTableViewCell.xib; sourceTree = "<group>"; };
+		7F90AB4625D14C2700882653 /* RecievedGoogleTranslationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedGoogleTranslationDataModel.swift; sourceTree = "<group>"; };
+		7F90AB4925D14CB800882653 /* PostGoogleTransDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGoogleTransDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F3147E925C0AF1A00B524F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F3F329C25B5954D00FF7BF1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		7F3F328C25B5954C00FF7BF1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +74,68 @@
 		7F3F329725B5954D00FF7BF1 /* FastTranslator */ = {
 			isa = PBXGroup;
 			children = (
-				7F3F329825B5954D00FF7BF1 /* AppDelegate.swift */,
-				7F3F329A25B5954D00FF7BF1 /* SceneDelegate.swift */,
-				7F3F329C25B5954D00FF7BF1 /* ViewController.swift */,
-				7F3F329E25B5954D00FF7BF1 /* Main.storyboard */,
-				7F3F32A125B5954E00FF7BF1 /* Assets.xcassets */,
-				7F3F32A325B5954E00FF7BF1 /* LaunchScreen.storyboard */,
 				7F3F32A625B5954E00FF7BF1 /* Info.plist */,
+				7F3F32D125B5BB5300FF7BF1 /* MainWorkspace */,
+				7F3F32BD25B5B3EB00FF7BF1 /* Helpers */,
 			);
 			path = FastTranslator;
+			sourceTree = "<group>";
+		};
+		7F3F32AD25B5956B00FF7BF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F90AB4625D14C2700882653 /* RecievedGoogleTranslationDataModel.swift */,
+				7F90AB4925D14CB800882653 /* PostGoogleTransDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F3F32AE25B5957A00FF7BF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B41D525D52FFA0000D268 /* Cells */,
+				7F3F329E25B5954D00FF7BF1 /* Main.storyboard */,
+				7F3147E925C0AF1A00B524F5 /* Controllers */,
+				7F7B41E025D54E6E0000D268 /* GradientLayer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F3F32AF25B5958400FF7BF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F3F32BD25B5B3EB00FF7BF1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7F3F329825B5954D00FF7BF1 /* AppDelegate.swift */,
+				7F3F329A25B5954D00FF7BF1 /* SceneDelegate.swift */,
+				7F3F32A125B5954E00FF7BF1 /* Assets.xcassets */,
+				7F3F32A325B5954E00FF7BF1 /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F3F32D125B5BB5300FF7BF1 /* MainWorkspace */ = {
+			isa = PBXGroup;
+			children = (
+				7F3F32AD25B5956B00FF7BF1 /* Model */,
+				7F3F32AE25B5957A00FF7BF1 /* View */,
+				7F3F32AF25B5958400FF7BF1 /* Presenter */,
+			);
+			path = MainWorkspace;
+			sourceTree = "<group>";
+		};
+		7F7B41D525D52FFA0000D268 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B41E725DBFF7A0000D268 /* MainTranslatorTableViewCell.swift */,
+				7F7B41E825DBFF7A0000D268 /* MainTranslatorTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +166,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = " Romanovskyi Volodymyr";
 				TargetAttributes = {
 					7F3F329425B5954D00FF7BF1 = {
 						CreatedOnToolsVersion = 12.3;
@@ -126,6 +198,7 @@
 			files = (
 				7F3F32A525B5954E00FF7BF1 /* LaunchScreen.storyboard in Resources */,
 				7F3F32A225B5954E00FF7BF1 /* Assets.xcassets in Resources */,
+				7F7B41EA25DBFF7A0000D268 /* MainTranslatorTableViewCell.xib in Resources */,
 				7F3F32A025B5954D00FF7BF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7B41E125D54E6E0000D268 /* GradientLayer.swift in Sources */,
 				7F3F329D25B5954D00FF7BF1 /* ViewController.swift in Sources */,
+				7F90AB4A25D14CB800882653 /* PostGoogleTransDataModel.swift in Sources */,
+				7F7B41E925DBFF7A0000D268 /* MainTranslatorTableViewCell.swift in Sources */,
+				7F90AB4725D14C2700882653 /* RecievedGoogleTranslationDataModel.swift in Sources */,
 				7F3F329925B5954D00FF7BF1 /* AppDelegate.swift in Sources */,
 				7F3F329B25B5954D00FF7BF1 /* SceneDelegate.swift in Sources */,
 			);
