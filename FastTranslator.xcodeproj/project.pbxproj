@@ -22,7 +22,7 @@
 		CA261E5525E51AE100E954C2 /* GoogleRapidEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E5425E51AE100E954C2 /* GoogleRapidEndpoint.swift */; };
 		CA261E5825E51E3900E954C2 /* PostDataModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E5725E51E3900E954C2 /* PostDataModelProtocol.swift */; };
 		CA261E5C25E54EA800E954C2 /* EndpointsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E5B25E54EA800E954C2 /* EndpointsProtocol.swift */; };
-		CA261E6825E561DC00E954C2 /* NeyworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E6725E561DC00E954C2 /* NeyworkErrors.swift */; };
+		CA261E6825E561DC00E954C2 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E6725E561DC00E954C2 /* NetworkErrors.swift */; };
 		CA7E4E2A25E5016400A40FB0 /* LanguagesCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E4E2925E5016400A40FB0 /* LanguagesCodes.swift */; };
 		CA7E4E2E25E5030400A40FB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E4E2D25E5030400A40FB0 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		CA261E5425E51AE100E954C2 /* GoogleRapidEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleRapidEndpoint.swift; sourceTree = "<group>"; };
 		CA261E5725E51E3900E954C2 /* PostDataModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModelProtocol.swift; sourceTree = "<group>"; };
 		CA261E5B25E54EA800E954C2 /* EndpointsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsProtocol.swift; sourceTree = "<group>"; };
-		CA261E6725E561DC00E954C2 /* NeyworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeyworkErrors.swift; sourceTree = "<group>"; };
+		CA261E6725E561DC00E954C2 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		CA7E4E2925E5016400A40FB0 /* LanguagesCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesCodes.swift; sourceTree = "<group>"; };
 		CA7E4E2D25E5030400A40FB0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +178,7 @@
 				CA261E5225E51AAF00E954C2 /* Endpoints */,
 				CA7E4E2D25E5030400A40FB0 /* NetworkService.swift */,
 				CA261E4F25E511C400E954C2 /* HTTPMethods.swift */,
-				CA261E6725E561DC00E954C2 /* NeyworkErrors.swift */,
+				CA261E6725E561DC00E954C2 /* NetworkErrors.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 				CA261E5C25E54EA800E954C2 /* EndpointsProtocol.swift in Sources */,
 				7F7B41E125D54E6E0000D268 /* GradientLayer.swift in Sources */,
 				7F3F329D25B5954D00FF7BF1 /* ViewController.swift in Sources */,
-				CA261E6825E561DC00E954C2 /* NeyworkErrors.swift in Sources */,
+				CA261E6825E561DC00E954C2 /* NetworkErrors.swift in Sources */,
 				7F90AB4A25D14CB800882653 /* PostGoogleTransDataModel.swift in Sources */,
 				7F7B41E925DBFF7A0000D268 /* MainTranslatorTableViewCell.swift in Sources */,
 				CA7E4E2E25E5030400A40FB0 /* NetworkService.swift in Sources */,

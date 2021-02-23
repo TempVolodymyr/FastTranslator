@@ -12,7 +12,7 @@ struct GoogleRapidEndpoint: EndpointType {
     //static let shared = GoogleRapidEndpoint()
     
     var apiKey: String { return String("\(Bundle.main.object(forInfoDictionaryKey: "googleRapidTranslationAPIKEY"))")}
-    var path: String { return "https://\(headers["x-rapidapi-host"])" }
+    var path: String { return "https://google-translate20.p.rapidapi.com" }
     var methodApiPath: String { return "/translate" }
     var httpMethod: HTTPMethod { return .post }
     
@@ -30,11 +30,4 @@ struct GoogleRapidEndpoint: EndpointType {
         httpBody.append("&tl=\(postData.targetLanguage)".data(using: String.Encoding.utf8)!)
         return httpBody
     }
-    
-//    var task: Data {
-//        get(data: PostGoogleTransDataModel) {
-//            return Data(
-//        }
-//    }
-    
 }

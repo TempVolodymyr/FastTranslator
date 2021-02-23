@@ -10,7 +10,7 @@ import Foundation
 
 protocol EndpointType {
     var path: String { get }
-    var apiKey: String { get }
+    //var apiKey: String { get }
     var methodApiPath: String { get }
     var httpMethod: HTTPMethod { get }
     var headers: HTTPHeaders  { get }

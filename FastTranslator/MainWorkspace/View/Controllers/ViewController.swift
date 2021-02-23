@@ -16,13 +16,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //mainScreenTableView.alpha = 0// .backgroundColor = .clear
         setupBackground()
+        let x = NetworkService()
+        let y = PostGoogleTransDataModel(targetLanguage: "es", sourceLanguage: "en", text: "something")
+        x.makeRequest(dataModel: y, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData) { (data, resp, err) in
+            print("succese")
+        }
         // Do any additional setup after loading the view.
     }
     
     private func setupBackground() {
         view.backgroundColor = .clear // .none
         gradientLayer.frame = view.frame
-        view.layer.insertSublayer(gradientLayer, at: 0) //view.addSubview(gradientLayer) ///insertSubview
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        //view.addSubview(gradientLayer) ///insertSubview
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

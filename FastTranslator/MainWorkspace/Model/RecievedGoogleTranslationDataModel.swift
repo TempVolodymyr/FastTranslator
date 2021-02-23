@@ -27,9 +27,9 @@ struct RecievedGoogleTranslationDataModel: Decodable {
         
         enum CodingKeys: String, CodingKey {
             case pairsBySentences = "pairs"
-            case pronunciation //= "pronunciation"
-            case source //= "source"
-            case translation //= "translation"
+            case pronunciation
+            case source
+            case translation
         }
         
         struct Pair: Decodable {
@@ -56,7 +56,7 @@ struct RecievedGoogleTranslationDataModel: Decodable {
                 let isoCode: String
                 
                 enum CodingKeys: String, CodingKey {
-                    case didYouMean //= "didYouMean"
+                    case didYouMean
                     case isoCode = "iso"
                 }
             }
