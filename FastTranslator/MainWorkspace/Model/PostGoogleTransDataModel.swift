@@ -19,3 +19,7 @@ struct PostGoogleTransDataModel : Encodable {
         case text
     }
 }
+
+extension PostGoogleTransDataModel: PostDataModelProtocol {
+    
+}

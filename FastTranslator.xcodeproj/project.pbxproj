@@ -18,6 +18,13 @@
 		7F7B41EA25DBFF7A0000D268 /* MainTranslatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7B41E825DBFF7A0000D268 /* MainTranslatorTableViewCell.xib */; };
 		7F90AB4725D14C2700882653 /* RecievedGoogleTranslationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90AB4625D14C2700882653 /* RecievedGoogleTranslationDataModel.swift */; };
 		7F90AB4A25D14CB800882653 /* PostGoogleTransDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90AB4925D14CB800882653 /* PostGoogleTransDataModel.swift */; };
+		CA261E5025E511C400E954C2 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E4F25E511C400E954C2 /* HTTPMethods.swift */; };
+		CA261E5525E51AE100E954C2 /* GoogleRapidEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E5425E51AE100E954C2 /* GoogleRapidEndpoint.swift */; };
+		CA261E5825E51E3900E954C2 /* PostDataModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E5725E51E3900E954C2 /* PostDataModelProtocol.swift */; };
+		CA261E5C25E54EA800E954C2 /* EndpointsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E5B25E54EA800E954C2 /* EndpointsProtocol.swift */; };
+		CA261E6825E561DC00E954C2 /* NeyworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261E6725E561DC00E954C2 /* NeyworkErrors.swift */; };
+		CA7E4E2A25E5016400A40FB0 /* LanguagesCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E4E2925E5016400A40FB0 /* LanguagesCodes.swift */; };
+		CA7E4E2E25E5030400A40FB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E4E2D25E5030400A40FB0 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		7F7B41E825DBFF7A0000D268 /* MainTranslatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTranslatorTableViewCell.xib; sourceTree = "<group>"; };
 		7F90AB4625D14C2700882653 /* RecievedGoogleTranslationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedGoogleTranslationDataModel.swift; sourceTree = "<group>"; };
 		7F90AB4925D14CB800882653 /* PostGoogleTransDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGoogleTransDataModel.swift; sourceTree = "<group>"; };
+		CA261E4F25E511C400E954C2 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		CA261E5425E51AE100E954C2 /* GoogleRapidEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleRapidEndpoint.swift; sourceTree = "<group>"; };
+		CA261E5725E51E3900E954C2 /* PostDataModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModelProtocol.swift; sourceTree = "<group>"; };
+		CA261E5B25E54EA800E954C2 /* EndpointsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsProtocol.swift; sourceTree = "<group>"; };
+		CA261E6725E561DC00E954C2 /* NeyworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeyworkErrors.swift; sourceTree = "<group>"; };
+		CA7E4E2925E5016400A40FB0 /* LanguagesCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesCodes.swift; sourceTree = "<group>"; };
+		CA7E4E2D25E5030400A40FB0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,7 @@
 			children = (
 				7F90AB4625D14C2700882653 /* RecievedGoogleTranslationDataModel.swift */,
 				7F90AB4925D14CB800882653 /* PostGoogleTransDataModel.swift */,
+				CA261E5725E51E3900E954C2 /* PostDataModelProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,9 +137,11 @@
 		7F3F32D125B5BB5300FF7BF1 /* MainWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				CA7E4E2825E4FDC500A40FB0 /* NetworkLayer */,
 				7F3F32AD25B5956B00FF7BF1 /* Model */,
 				7F3F32AE25B5957A00FF7BF1 /* View */,
 				7F3F32AF25B5958400FF7BF1 /* Presenter */,
+				CA7E4E2925E5016400A40FB0 /* LanguagesCodes.swift */,
 			);
 			path = MainWorkspace;
 			sourceTree = "<group>";
@@ -136,6 +153,34 @@
 				7F7B41E825DBFF7A0000D268 /* MainTranslatorTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CA261E5225E51AAF00E954C2 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				CA261E5425E51AE100E954C2 /* GoogleRapidEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		CA261E5325E51AC200E954C2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CA261E5B25E54EA800E954C2 /* EndpointsProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CA7E4E2825E4FDC500A40FB0 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CA261E5325E51AC200E954C2 /* Protocols */,
+				CA261E5225E51AAF00E954C2 /* Endpoints */,
+				CA7E4E2D25E5030400A40FB0 /* NetworkService.swift */,
+				CA261E4F25E511C400E954C2 /* HTTPMethods.swift */,
+				CA261E6725E561DC00E954C2 /* NeyworkErrors.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,11 +255,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA261E5025E511C400E954C2 /* HTTPMethods.swift in Sources */,
+				CA261E5C25E54EA800E954C2 /* EndpointsProtocol.swift in Sources */,
 				7F7B41E125D54E6E0000D268 /* GradientLayer.swift in Sources */,
 				7F3F329D25B5954D00FF7BF1 /* ViewController.swift in Sources */,
+				CA261E6825E561DC00E954C2 /* NeyworkErrors.swift in Sources */,
 				7F90AB4A25D14CB800882653 /* PostGoogleTransDataModel.swift in Sources */,
 				7F7B41E925DBFF7A0000D268 /* MainTranslatorTableViewCell.swift in Sources */,
+				CA7E4E2E25E5030400A40FB0 /* NetworkService.swift in Sources */,
+				CA7E4E2A25E5016400A40FB0 /* LanguagesCodes.swift in Sources */,
+				CA261E5825E51E3900E954C2 /* PostDataModelProtocol.swift in Sources */,
 				7F90AB4725D14C2700882653 /* RecievedGoogleTranslationDataModel.swift in Sources */,
+				CA261E5525E51AE100E954C2 /* GoogleRapidEndpoint.swift in Sources */,
 				7F3F329925B5954D00FF7BF1 /* AppDelegate.swift in Sources */,
 				7F3F329B25B5954D00FF7BF1 /* SceneDelegate.swift in Sources */,
 			);
